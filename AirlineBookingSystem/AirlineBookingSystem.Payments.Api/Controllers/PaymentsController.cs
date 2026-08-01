@@ -24,7 +24,7 @@ namespace AirlineBookingSystem.Payments.Api.Controllers
             return CreatedAtAction(nameof(ProcessPayment), new { id }, command);
         }
 
-        [HttpPost("refun/{id}")]
+        [HttpPost("refund/{id}")]
         public async Task<IActionResult> RefundPayment(Guid id)
         {
             await _mediator.Send(new RefundPaymentCommand(id));

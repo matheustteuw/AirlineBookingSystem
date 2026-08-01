@@ -27,7 +27,7 @@ builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(assemblies
 builder.Services.AddScoped<IFlighRepository, FlightRepository>();
 
 builder.Services.AddScoped<IDbConnection>(sp =>
-    new SqlConnection(builder.Configuration.GetConnectionString("DefaultConnetion")));
+    new SqlConnection(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 

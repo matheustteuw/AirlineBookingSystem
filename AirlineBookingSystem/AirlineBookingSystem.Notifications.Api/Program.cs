@@ -27,7 +27,7 @@ builder.Services.AddScoped<INotificationService, NotificationService>();
 builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
 
 builder.Services.AddScoped<IDbConnection>(sp =>
-    new SqlConnection(builder.Configuration.GetConnectionString("DefaultConnetion")));
+    new SqlConnection(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 

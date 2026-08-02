@@ -5,6 +5,8 @@ using AirlineBookingSystem.Bookings.Infrastructure.Repositories;
 using System.Reflection;
 using AirlineBookingSystem.Bookings.Application.Handlers;
 using MassTransit;
+using AirlineBookingSystem.Bookings.Application.Consumers;
+using AirlineBookingSystem.BuildingBlocks.Common;
 
 var builder = WebApplication.CreateBuilder(args);
 
